@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google</title>
+		<link type="text/css" rel="stylesheet" href="normalize.css">
+		<link type="text/css" rel="stylesheet" href="google.css">
+	</head>
+	<body OnLoad="document.getElementByID('searchbox').focus();">
+		<div id="wrapper">
+			<div id="main-content">
+				<div id="logo">
+					<img src="https://www.google.com/images/srpr/logo11w.png"height="95" width="269" alt="Google">
+				</div>
+				<form name="google-form">
+					<input type="text" id="searchbox">
+						<script language='javascript' type='text/javascript'>
+						function SetFocus()
+						{
+							// safety check, make sure its a post 1999 browser
+							if (!document.getElementById)
+							{
+								return;
+							}
+
+							var inputTextBox = document.getElementById("searchbox");
+
+							if (inputTextBox != null)
+							{
+								inputTextBox.focus();
+							}
+						}
+						SetFocus();
+						</script><br>
+					<div id="buttons">
+						<input type="submit" id="search-button" value="Google Search">
+						<input type="submit" id="lucky-button" value="I'm Feeling Lucky">
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
