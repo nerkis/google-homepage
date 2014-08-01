@@ -5,7 +5,18 @@
 		<link type="text/css" rel="stylesheet" href="normalize.css">
 		<link type="text/css" rel="stylesheet" href="google.css">
 	</head>
-	<body OnLoad="document.getElementByID('searchbox').focus();">
+	<body>
+		<header>
+			<div id="top-menu">
+				<ul>
+					<li><a href="http://plus.google.com">+You</a></li>
+					<li><a href="http://gmail.google.com">Gmail</a></li>
+					<li><a href="https://www.google.com/imghp">Images</a></li>
+					<li><a><img src="grid icon.png" title="Apps"></a></li>
+					<li><input type="submit" id="login-button" value="Sign in"></li>
+				</ul>
+			</div>
+		</header>
 		<div id="wrapper">
 			<div id="main-content">
 				<div id="logo">
@@ -32,11 +43,26 @@
 						SetFocus();
 						</script><br>
 					<div id="buttons">
-						<input type="submit" id="search-button" value="Google Search">
-						<input type="submit" id="lucky-button" value="I'm Feeling Lucky">
+						<input type="submit" class="button" id="search-button" value="Google Search">
+						<input type="submit" class="button" id="lucky-button" value="I'm Feeling Lucky">
 					</div>
 				</form>
 			</div>
 		</div>
+		<footer>
+			<div id="left-footer">
+				<ul>
+					<li><a href="https://www.google.com/intl/en/ads/">Advertising</a></li>
+					<li><a href="https://www.google.com/services/">Business</a></li>
+					<li><a href="https://www.google.com/intl/en/about/">About</a></li>
+				<ul>
+			</div>
+			<div id="right-footer">
+				<ul>
+					<li><a href="https://www.google.com/intl/en/policies/">Privacy & Terms</a></li>
+					<li><a href="https://www.google.com/preferences">Settings</a></li>
+				</ul>
+			</div>
+		</footer>
 	</body>
 </html>
