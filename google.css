@@ -23,6 +23,11 @@ li {
 	margin: 0 5px 0 5px;
 }
 
+li a img {
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+
 #login-button {
 	width: 69px;
 	height: 30px;
