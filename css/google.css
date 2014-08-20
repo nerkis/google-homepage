@@ -20,6 +20,10 @@ header {
 	clear: right;
 }
 
+#top-menu a {
+	color:#262626;
+}
+
 ul {
 	margin: 0;
 	padding: 10px;
@@ -32,13 +36,13 @@ li {
 	margin: 0 5px 0 5px;
 }
 
-li img {
+#apps-icon{
 	vertical-align: middle;
 	margin-bottom: 2px;
 	opacity: 0.6;
 }
 
-li img:hover {
+#apps-icon:hover {
 	opacity: 1;
 }
 
@@ -56,10 +60,6 @@ li img:hover {
 
 #login-button:hover{
 	box-shadow: 0 1px 0 rgba(0,0,0,.15);
-}
-
-#top-menu a {
-	color: #262626;
 }
 
 #wrapper {
@@ -148,10 +148,15 @@ footer {
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+	min-width: 1000px;
 }
 
 footer a {
 	color: #666666;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 footer a:active {

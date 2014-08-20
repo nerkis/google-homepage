@@ -5,118 +5,197 @@
 		<link type="text/css" rel="stylesheet" href="css\normalize.css">
 		<link type="text/css" rel="stylesheet" href="css\results.css">
 	</head>
-	<body>
+		<body>
 		<header>
 			<div id="header-left">
-				<ul>
-					<li><img src="img\logo11w.png"></li>
+				<form>
+					<a href="google.html"><img src="img\results_logo.png" id="logo" title="Go to Google Home"></a>
+					<input type="text" id="searchbox" value="how to build a website">
+					<button type="submit" class="header-button" id="search-button"><img src="img\magnifying_glass.png"></button>
+				</form>
+			</div>
+			<div id="header-right">
+				<ul class="menu">
 					<li>
-						<form>
-							<input type="text" name="searchbox" value="how to build a website"><img src="img\magnifying_glass.png">
-						</form>
+						<img src="img\grid-icon-results.png" title="Apps" id="apps-icon">
+					</li>
+					<li>
+						<input type="submit" class="header-button" id="login-button" value="Sign in">
 					</li>
 				</ul>
 			</div>
-			<div id="header-right">
-				<ul>
-					<li><img src="img\grid-icon.png" title="Apps"></li>
-					<li><input type="submit" id="login-button" value="Sign in"></li>
-				</ul>
-			</div>
 		</header>
-		<div id="menu">
-			<ul>
-				<li>Web</li>
-				<li>Videos</li>
-				<li>Shopping</li>
-				<li>Books</li>
-				<li>Images</li>
+		<div id="menu-wrapper" class="menu">
+			<ul id="top-menu" class="grey-link">
+				<li><span class="menu-highlight">Web</span></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Shopping</a></li>
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Images</a></li>
 				<li>More</li>
 				<li>Search tools</li>
 			</ul>
 		</div>
-		<p>About 250,000,000 results (0.29 seconds)</p>
 		<div id="top-ads">
-			<p class="result-header"><a href="#"><span class="query">How to Build a Website</span> - Top10Best<span class="query">WebsiteBuild</span>ers.com</a></p>
-			<p class="result-url">www.top10best<span class="query">websitebuild</span>ers.com/<span class="query">Build</span></p>
-			<p class="result-desc"><span class="query">Build a Website</span> Easily and Quickly. Hundreds of Templates are Available<br>
-			Easy to Use ... Free Trial ... Free Domain ... 1000+ Templates</p>
-			<p class="result-plus">Top 10 Best Website Builders has 240 followers on Google+</p>
+			<p>About 250,000,000 results (0.29 seconds)</p>
+			<p class="result-header">
+				<a href="#">
+					<span class="query">How to Build a Website</span> - Top10Best<span class="query">WebsiteBuild</span>ers.com
+				</a>
+			</p>
+			<p class="result-url">
+				www.top10best<span class="query">websitebuild</span>ers.com/<span class="query">Build</span>
+			</p>
+			<p class="result-desc">
+				<span class="query">Build a Website</span> Easily and Quickly. Hundreds of Templates are Available<br>Easy to Use ... Free Trial ... Free Domain ... 1000+ Templates
+			</p>
+			<p class="result-plus">
+				Top 10 Best Website Builders has 240 followers on Google+
+			</p>
 			<ul id="left-ad-links">
-				<li>Top 5 Feature Comparison</li>
-				<li>Choosing A Site Builder</li>
+				<li><a href="#">Top 5 Feature Comparison</a></li>
+				<li><a href="#">Choosing A Site Builder</a></li>
 			</ul>
 			<ul id="right-ad-links">
-				<li>Web.com Review</li>
-				<li>Top Site Builders Reviews</li>
+				<li><a href="#">Web.com Review</a></li>
+				<li><a href="#">Top Site Builders Reviews</a></li>
 			</ul>
 		</div>
+		<div id="result-list">
 			<ul id="results">
 				<! --result 1-->
 				<li>
-					<p class="result-header"><a href="#"><span class="query">How to Build a Website</span> | PCMag.com</a></p>
-					<p class="result-url">www.pcmag.com/article2/0,2817,2404298,00.asp <span class="result-host">PC Magazine</span></p>
-					<p class="result-desc"><span class="result-prefix">by Eric Griffith - Sep 4, 2013</span> They also won't make you a Web designer; a job that can be very distinct from <span class="query">building a site</span>. Still, these sites, services, and software will ease some of the ...</p>
+					<p class="result-header">
+						<a href="#">
+							<span class="query">How to Build a Website</span>
+							 | PCMag.com
+						</a>
+					</p>
+					<p class="result-url">
+						www.pcmag.com/article2/0,2817,2404298,00.asp 
+						<span class="result-host">PC Magazine</span>
+					</p>
+					<p class="result-desc">
+						<span class="result-prefix">by Eric Griffith - Sep 4, 2013</span>
+						 They also won't make you a Web designer; a job that can be very distinct from <span class="query">building a site</span>. Still, these sites, services, and software will ease some of the ...
+					</p>
 				</li>
 				<! --result 2-->
 				<li>
-					<p class="result-header"><a href="#"><span class="query">How to Build a Website</span> in Seven Steps - Web Design</a></p>
-					<p class="result-url"><span class="query">web</span>design.about.com/od/beforeyoustarta<span class="query">website</span>/p/<span class="query">build_website</span>.htm</p>
-					<p class="result-desc"><span class="result-prefix">by Jennifer Kyrnin - </span>Hosting is where you put your website and all the web pages. While it's possible to <span class="query">build a website</span> on your personal computer and never move it online, ...</p>
-					<p class="result-links">Free Web Hosting &#45; Web Design Basics &#45; HTML Editors &#45; Learn HTML</p>
+					<p class="result-header">
+						<a href="#">
+							<span class="query">How to Build a Website</span> 
+							in Seven Steps - Web Design
+						</a>
+					</p>
+					<p class="result-url">
+						<span class="query">web</span>design.about.com/od/beforeyoustarta<span class="query">website</span>/p/<span class="query">build_website</span>.htm
+					</p>
+					<p class="result-desc">
+						<span class="result-prefix">by Jennifer Kyrnin - </span>Hosting is where you put your website and all the web pages. While it's possible to <span class="query">build a website</span> on your personal computer and never move it online, ...
+					</p>
+					<p class="result-links">
+						Free Web Hosting &#45; Web Design Basics &#45; HTML Editors &#45; Learn HTML
+					</p>
 				</li>
 				<! --result 3-->
 				<li>
-					<p class="result-header"><a href="#">New <span class="query">Website</span> Shows How Anyone Can Create a ... - Reuters</a></p>
-					<p class="result-url">www.reuters.com/article/.../idUSnHUGdl6D+71+ONE20131028 <span="result-host">Reuters</span></p>
-					<p class="result-desc"><span class="result-prefix">Oct 28, 2013 -</span> Thanks for a new free <span class="query">website</span> just launched, business owners and entrepreneurs can follow a simple step by step tutorial to <span class="query">build</span> their own ...</p>
+					<p class="result-header">
+						<a href="#">
+							New <span class="query">Website</span> Shows How Anyone Can Create a ... - Reuters
+						</a>
+					</p>
+					<p class="result-url">
+						www.reuters.com/article/.../idUSnHUGdl6D+71+ONE20131028 <span="result-host">Reuters</span>
+					</p>
+					<p class="result-desc">
+						<span class="result-prefix">Oct 28, 2013 -</span> Thanks for a new free <span class="query">website</span> just launched, business owners and entrepreneurs can follow a simple step by step tutorial to <span class="query">build</span> their own ...
+					</p>
 				</li>
 				<! --result 4-->
 				<li>
-					<p class="result-header"><a href="#">Squarespace: <span class="query">Build a Website</span></a></p>
-					<p class="result-url">www.squarespace.com/ <span class="result-host">Squarespace</span></p>
-					<p class="result-desc">Focus on writing your weblog entries and publishing your files and pictures instead of worrying about how to design and update your <span class="query">website</span>.</p>
+					<p class="result-header">
+						<a href="#">
+							Squarespace: <span class="query">Build a Website</span>
+						</a>
+					</p>
+					<p class="result-url">
+						www.squarespace.com/ <span class="result-host">Squarespace</span>
+					</p>
+					<p class="result-desc">
+						Focus on writing your weblog entries and publishing your files and pictures instead of worrying about how to design and update your <span class="query">website</span>.
+					</p>
 				</li>
 				<! --result 5-->
 				<li>
-					<p class="result-header"><a href="#"><span class="query">How to build a website</span> in a few easy steps - 1&amp;1 MyWebsite</a></p>
-					<p class="result-url"><span class="query">website</span>.1and1.com/<span class="query">how-to-build-a-website</span> <span class="result-host">1&amp;1 Internet</span></p>
-					<p class="result-desc">1&amp;1 shows you <span class="query">how to build a website</span> using the free tool website builder. Just a few minutes are enough to <span class="query">build a website</span>. See for yourself!</p>
+					<p class="result-header">
+						<a href="#">
+							<span class="query">How to build a website</span> in a few easy steps - 1&amp;1 MyWebsite
+						</a>
+					</p>
+					<p class="result-url">
+						<span class="query">website</span>.1and1.com/<span class="query">how-to-build-a-website</span> <span class="result-host">1&amp;1 Internet</span>
+					</p>
+					<p class="result-desc">
+						1&amp;1 shows you <span class="query">how to build a website</span> using the free tool website builder. Just a few minutes are enough to <span class="query">build a website</span>. See for yourself!
+					</p>
 				</li>
 		</div>
 		<div id="related-searches">
 			<p>Searches related to <span class="query">how to build a website</span></p>
 			<ul>
-				<li><a href="#">how to build a website <span class="query">from scratch</span></a></li>
-				<li><a href="#">how to build a website <span class="query">with wordpress</span></a></li>
-				<li><a href="#">website <span class="query">templates</span></a></li>
-				<li><a href="#">how to <span class="query">create</span> a website</a></li>
-				<li><a href="#">how to build a website <span class="query">with dreamweaver</span></a></li>
-				<li><a href="#">how to <span class="query">design</span> a website</a></li>
-				<li><a href="#">how to <span class="query">make</span> a website</a></li>
-				<li><a href="#">website <span class="query">software</span></a></li>
+				<li>
+					<a href="#">how to build a website <span class="query">from scratch</span></a>
+				</li>
+				<li>
+					<a href="#">how to build a website <span class="query">with wordpress</span></a>
+				</li>
+				<li>
+					<a href="#">website <span class="query">templates</span></a>
+				</li>
+				<li>
+					<a href="#">how to <span class="query">create</span> a website</a>
+				</li>
+				<li>
+					<a href="#">how to build a website <span class="query">with dreamweaver</span></a>
+				</li>
+				<li>
+					<a href="#">how to <span class="query">design</span> a website</a>
+				</li>
+				<li>
+					<a href="#">how to <span class="query">make</span> a website</a>
+				</li>
+				<li>
+					<a href="#">website <span class="query">software</span></a>
+				</li>
 			</ul>
 		</div>
-		<img src="img\pages_google.png">
-		<ul id="pagination">
-			<li><strong>1</strong></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			<li><a href="#">7</a></li>
-			<li><a href="#">8</a></li>
-			<li><a href="#">9</a></li>
-			<li><a href="#">10</a></li>
-			<li><a href="#">Next</a></li>
-		</ul>
-		<footer>
-			<ul>
-				<li><a href="https://support.google.com/websearch/">Help</a></li>
-				<li><a href="#">Send feedback</a></li>
-				<li><a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a></li>
-			<ul>
+		<div id="pagination">
+			<img src="img\pages_google.png">
+			<ul class="menu">
+				<li>
+					<strong>1</strong>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li><a href="#"><span class="next">Next</span></a></li>
+			</ul>
+		</div>
+		<footer class="grey-link">
+				<ul class="menu" id="left-footer">
+					<li><a href="https://support.google.com/websearch/">Help</a></li>
+					<li><a href="#">Send feedback</a></li>
+					<li><a href="https://www.google.com/intl/en/policies/">Privacy &amp; Terms</a></li>
+				<ul>
 		</footer>
 	</body>
 </html>
