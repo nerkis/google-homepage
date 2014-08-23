@@ -21,6 +21,21 @@ ul {
 	list-style-type: none;
 }
 
+.light-grey {
+	color: #808080;
+}
+
+.grey-header {
+	color: #808080;
+}
+
+.light-grey a {
+	color: #808080;
+}
+
+.light-grey a:hover {
+	text-decoration: underline;
+}
 
 /* Header */
 header {
@@ -28,6 +43,13 @@ header {
 	background-color: #F2F2F2;
 	bottom-border: 1px solid #E4E4E4;
 }
+
+/* NEED BETTER WAY */
+/*#header-wrap,
+#menu-wrapper {
+	min-width: 110em;
+}*/
+
 
 #header-left {
 	float: left;
@@ -111,18 +133,49 @@ header {
 
 /* Top Menu */
 #menu-wrapper {
+	position: relative;
 	border-bottom: 1px solid #F2F2F2;
 	height: 38px;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 #top-menu {
+	position: inline;
+	vertical-align: middle;
 	margin-top: 21px;
 	margin-left: 123px;
+	min-width: 600px;
+}
+
+#gear-button {
+	position: absolute;
+	right: 0;
+	margin-right: 30px;
+	margin-top: -5px;
+	width: 70px;
+	height: 30px;
+	padding-top: 2px;
+	background-color: #F3F3F3;
+	border: 1px solid #DCDCDC;
+}
+
+#gear-button:hover{
+	background-color: #F6F6F6;
+	border: 1px solid #C6C6C6;
+	color: #3D3D3D;
+	box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+#gear {
+	opacity: 0.7;
+}
+
+#gear:hover {
+	opacity: 1;
 }
 
 .grey-link a {
-	color: #666666;
+	color: #808080;
 }
 
 .grey-link a:hover {
@@ -131,12 +184,20 @@ header {
 }
 
 .grey-link li {
-	margin: 0 16px 0 13px;
+	margin-right: 29px;
 }
 
 .menu-highlight {
 	font-weight: bold;
-	color: red;
+	color: #DD4B39;
+}
+
+#web-div {
+	border: 1.5px solid #DD4B39;
+	width: 40px;
+	margin-left: 128px;
+	position: absolute;
+	bottom: 0;
 }
 
 /* Search Result Content */
@@ -145,55 +206,124 @@ header {
 #related-searches{
 	position: relative;
 	margin-left: 135px;
-	width: 500px;
+	width: 538px;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+.rating-text, 
+.result-url,
+.light-grey,
+.result-desc {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#large-ad-info {
+	position: absolute;
+	right: 0;
+	margin-top: 4px;
+}
+
+.rating-text {
+	color: #E7711B;
+}
+
+#ad-link-wrap {
+	height: 50px;
+	padding-left: 30px;
+	margin-bottom: -5px;
+	margin-top: 0;
 }
 
 #left-ad-links {
+	position: inline;	
 	width: 50%;
 	/*padding-left: 29px;*/
 	float: left;
+	margin-top: 5px;
+}
+
+#left-ad-links li {
+	padding-bottom: 4px;
 }
 
 #right-ad-links {
+	position: inline;
 	width: 50%;
 	float: right;
+	margin-top: 5px;
+}
+
+#right-ad-links li {
+	padding-bottom: 4px;
+}
+
+.ad-links {
+	margin-top: 1px;
+}
+
+#last-ad {
+	margin-bottom: 15px;
+}
+
+.ad-img,
+.green-arrow,
+.grey-arrow {
+	padding-right: 2px;
+	margin-bottom: 2px;
+	position: inline;
+	vertical-align: middle;
+}
+
+.green-arrow,
+.grey-arrow {
+	margin-left: 2px;
+}
+
+.grey-arrow {
+	opacity: 0.5;
+}
+
+.grey-arrow:hover {
+	opacity: 1;
 }
 
 #result-list {
-
+	padding-bottom: 6px;
 }
 
-#related-searches {
+#related-title {
+	margin-bottom: -3px;
+	margin-top: 15px;
+}
 
+#related-searches li {
+	margin-bottom: 8px;
 }
 
 
 .result-header {
 	font-size: 18px;
+	margin-bottom: 0;
 }
 
 .result-url {
 	color: green;
+	position: inline;
+	vertical-align: middle;
 }
 
-.result-host {
-	color: gray;
-}
-
-.result-prefix {
-
+.result-url > a {
+	color: green;
 }
 
 .result-desc {
-
-}
-
-.result-plus {
-
+	width: 490px;
+	line-height: 135%;
 }
 
 .result-links {
-	color: #000099;
+	/*color: #000099;*/
 }
 
 .query {
@@ -211,24 +341,41 @@ header {
 
 /* Gooooogle Pagination */
 #pagination {
-	position: relative;
+	/*position: relative;*/
+	margin-top: 24px;
 	margin-left: 230px;
-	width: 500px;
+	width: 550px;
 }
 
 #pagination ul {
+	margin-left: 2px;
 	margin-top: 0;
-	/* want to move over */
+}
+
+#pagination img {
+	margin: 0;
+	padding: 0;
+}
+
+#numbers {
+	margin-left: 40px;
 }
 
 #pagination li {
 	display: inline;
-	padding: 3px;
+	padding-right: 4px;
+	margin-right: 5px;
+}
+
+#ten {
+	position: relative;
+	margin-left: -2px;
 }
 
 .next {
+	position: relative;
+	margin-left: 42px;
 	font-weight: bold;
-	/* want to move this over */
 }
 
 
@@ -246,5 +393,5 @@ footer {
 }
 
 #left-footer {
-	margin: 22px 0 0 82px;
+	margin: 22px 0 0 135px;
 }
