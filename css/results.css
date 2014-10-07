@@ -200,6 +200,17 @@ header {
 	bottom: 0;
 }
 
+#content-wrapper {
+	width: 985px;
+	margin-right: 0;
+	background-color: blue;
+}
+
+#left-content {
+	float:left;
+	width: 715px;
+}
+
 /* Search Result Content */
 #top-ads, 
 #result-list, 
@@ -338,6 +349,16 @@ header {
 	font-size: 15px;
 }
 
+/* Right Side Ad Bar */
+#right-ads {
+	float: right;
+	width: 270px;
+	margin-top: 49px;
+}
+
+#your-ad-here {
+	font-size:11px;
+}
 
 /* Gooooogle Pagination */
 #pagination {
@@ -390,6 +411,7 @@ footer {
 	bottom: 0;
 	min-width: 1000px;
 	margin-top: 30px;
+	clear: both;
 }
 
 #left-footer {
