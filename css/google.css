@@ -86,7 +86,7 @@ li {
 	margin: auto;
 }
 
-form {
+form[name="google-form"] {
 	margin-top: -32px;
 	text-align: center;
 }
